@@ -8,20 +8,22 @@
     <script src="src/main.js" defer></script>
   </head>
   <body>
-    <img src="./img/logo.png" alt="">
+    <img class="logo" src="./img/logo.png" alt="">
     <div class="menu">
-      <img class="button image" src="./img/blue_t.png" alt="">
-      <img class="button image" src="./img/blue_p.png" alt="">
-      <img class="button image" src="./img/blue_s.png" alt="">
-      <div class="blue-button button">Blue</div>
-      <div class="yellow-button button">Yellow</div>
-      <div class="pink-button button">Pink</div>
+      <button onclick="tee()">
+        <img src="./img/blue_t.png" alt="">
+      </button>
+      <button onclick="pants()">
+        <img src="./img/blue_p.png" alt="">
+      </button>
+      <button onclick="skirt()">
+        <img src="./img/blue_s.png" alt="">
+      </button>
+      <button onclick="blue()" class="blue-button">Blue</button>
+      <button onclick="yellow()" class="yellow-button">Yellow</button>
+      <button onclick="pink()" class="pink-button">Pink</button>
     </div>
     <ul>
-      <li>
-        <img class="tee female blue small image"src="./img/blue_t.png" alt="">
-        <span>female, small size</span>
-      </li>
     </ul>
   </body>
 </html>

@@ -26,14 +26,19 @@ body{
 .icon{
 
 }
-.image{
+img{
   height: 50px;
   width: 50px;
 }
-.button{
+.logo{
+  height: 100%;
+  width: 100px;
+}
+button{
   padding: 10px;
   margin: 5px;
   border-radius: 10%;
+  background-color: transparent;
 }
 .blue-button{
   background-color: var(--color-blue);
