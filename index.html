@@ -10,20 +10,20 @@
   <body>
     <img class="logo" src="./img/logo.png" alt="">
     <div class="menu">
-      <button onclick="tee()">
-        <img src="./img/blue_t.png" alt="">
+      <button>
+        <img src="./img/blue_t.png" alt="" data-key="type" data-value="tee">
       </button>
-      <button onclick="pants()">
-        <img src="./img/blue_p.png" alt="">
+      <button>
+        <img src="./img/blue_p.png" alt="" data-key="type" data-value="pants">
       </button>
-      <button onclick="skirt()">
-        <img src="./img/blue_s.png" alt="">
+      <button>
+        <img src="./img/blue_s.png" alt="" data-key="type" data-value="skirt">
       </button>
-      <button onclick="blue()" class="blue-button">Blue</button>
-      <button onclick="yellow()" class="yellow-button">Yellow</button>
-      <button onclick="pink()" class="pink-button">Pink</button>
+      <button class="blue-button" data-key="color" data-value="blue">Blue</button>
+      <button class="yellow-button" data-key="color" data-value="yellow">Yellow</button>
+      <button class="pink-button" data-key="color" data-value="pink">Pink</button>
     </div>
-    <ul>
+    <ul class="items">
     </ul>
   </body>
 </html>

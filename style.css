@@ -6,6 +6,11 @@
   --color-yellow: #fbbe28;
   --color-pink: #fd7f84;
   --color-light-grey: #dfdfdf;
+
+  --base-space: 8px;
+  --size-button: 60px;
+  --animation-duration: 300ms;
+  --button-font-size: 18px;
 }
 
 * {
@@ -14,31 +19,43 @@
 body{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: var(--color-black);
+  margin: 100px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 .menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.icon{
 
-}
 img{
-  height: 50px;
-  width: 50px;
+  height: var(--size-button);
+  width: var(--size-button);
 }
+
 .logo{
+  cursor: pointer;
+  transition: transform var(--animation-duration) ease;
   height: 100%;
   width: 100px;
 }
+
 button{
+  border: none;
+  outline: none;
+  cursor: pointer;
   padding: 10px;
   margin: 5px;
   border-radius: 10%;
   background-color: transparent;
+  transition: transform var(--animation-duration) ease;
+  font-size: var(--button-font-size);
 }
 .blue-button{
   background-color: var(--color-blue);
@@ -50,12 +67,20 @@ button{
 
   background-color: var(--color-pink);
 }
+ul {
+  overflow-y: scroll;
+  height: 500px;
+}
+
 li {
   background-color: var(--color-white);
   display: flex;
   align-items: center;
   height: 50px;
   width: 350px;
-  border-radius: 3%;
+  border-radius: 1%;
   padding: 10px;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: var(--base-space);
 }
